@@ -1,10 +1,12 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Net;
 using Newtonsoft.Json;
 
 namespace SwissTransport
 {
     public class Transport : ITransport
+
     {
         public Stations GetStations(string query)
         {
@@ -72,5 +74,6 @@ namespace SwissTransport
             
             return request;
         }
+
     }
 }
